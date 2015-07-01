@@ -38,6 +38,7 @@
 		C3D25FE11B4493A100B343A2 /* quick2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quick2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D25FE61B4493A100B343A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D25FE71B4493A100B343A2 /* quick2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quick2Tests.swift; sourceTree = "<group>"; };
+		C3D25FF11B4496C900B343A2 /* quick2-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quick2-Bridging-header.h"; sourceTree = "<group>"; };
 		D0825D2F707275F2326C2D51 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F454CE021E846AC56174776D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +117,7 @@
 			children = (
 				C3D25FE71B4493A100B343A2 /* quick2Tests.swift */,
 				C3D25FE51B4493A100B343A2 /* Supporting Files */,
+				C3D25FF11B4496C900B343A2 /* quick2-Bridging-header.h */,
 			);
 			path = quick2Tests;
 			sourceTree = "<group>";
@@ -421,6 +423,7 @@
 		};
 		C3D25FEF1B4493A100B343A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0825D2F707275F2326C2D51 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -434,6 +437,7 @@
 				INFOPLIST_FILE = quick2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quick2Tests/quick2-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quick2.app/quick2";
 			};
 			name = Debug;
@@ -449,6 +453,7 @@
 				INFOPLIST_FILE = quick2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quick2Tests/quick2-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/quick2.app/quick2";
 			};
 			name = Release;
