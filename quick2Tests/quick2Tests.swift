@@ -24,7 +24,7 @@ class quick2Tests: XCTestCase {
     func testExample() {
         let manager = AFHTTPRequestOperationManager(baseURL: NSURL(string: "http://www.touchofmodern.com")!)
         // This is an example of a functional test case.
-        XCTAssert(manager.baseURL == NSURL(string: "http://www.touchofmodern.comabc")!, "Base url for manager not correct")
+        XCTAssert(manager.baseURL == NSURL(string: "http://www.touchofmodern.com")!, "Base url for manager not correct")
     }
     
     func testPerformanceExample() {
